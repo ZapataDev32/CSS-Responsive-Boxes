@@ -1,3 +1,75 @@
 body {
   background: papayawhip;
 }
+.container{
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 2em;
+  text-align: center;
+  gap: 10px;
+}
+
+.a{
+  background-color: rgb(190, 145, 233);
+  flex-grow: 1;
+}
+.b{
+  background-color: blueviolet;
+  min-height: 45vh;
+}
+.c{
+  background-color: rgb(228, 209, 245);
+  flex-grow: 1;
+  min-height: 20vh;
+}
+.d{
+  background-color: rgb(192, 159, 223);
+  flex-grow: 1;
+  min-height: 20vh;
+}
+.e{
+  background-color: rgb(155, 118, 189);
+  flex-grow: 1;
+  min-height: 20vh;
+}
+.f{
+  background-color: rgb(33, 5, 59);
+  flex-grow: 1;
+}
+
+.bottom-main{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media(min-width: 600px){
+    /*body{
+    display: none;
+  }*/
+
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .b,.bottom-main{
+    width: 75vw;
+  }
+
+ 
+  .a{
+    width: 100%;
+  }
+
+
+ 
+
+  /*.bottom-main{
+    width: 60vh;
+  }*/
+
+}
